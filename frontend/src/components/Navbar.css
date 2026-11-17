@@ -1,0 +1,135 @@
+.travel-navbar .travel-logo {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+  margin: 0 !important;
+  color: #173747 !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: normal;
+  text-decoration: none !important;
+}
+
+.travel-logo-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  background: linear-gradient(145deg, #24b7a5, #087d82);
+  box-shadow: 0 5px 12px rgba(8, 125, 130, 0.25), inset 0 1px rgba(255, 255, 255, 0.45);
+  color: #fff;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.travel-logo:hover .travel-logo-mark {
+  transform: rotate(-12deg) translateY(-1px);
+  box-shadow: 0 8px 17px rgba(8, 125, 130, 0.32), inset 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.travel-logo-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.travel-navbar .travel-logo-name {
+  color: #173747;
+  font-size: 19px;
+  font-weight: 750;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.travel-navbar .travel-logo-name > span {
+  color: #0c9b8e;
+}
+
+.travel-logo-tagline {
+  color: #758990;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1;
+}
+
+.travel-navbar .travel-nav-link {
+  display: inline-flex !important;
+  align-items: center;
+  flex: 0 0 auto;
+  margin: 0 !important;
+  white-space: nowrap;
+}
+
+.travel-navbar .travel-nav-links {
+  display: flex !important;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 22px !important;
+  white-space: nowrap;
+}
+
+.travel-navbar .travel-logout-btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .travel-navbar {
+    gap: 12px;
+    padding: 11px 16px !important;
+  }
+
+  .travel-logo-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+  }
+
+  .travel-logo-mark svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .travel-navbar .travel-logo-name {
+    font-size: 17px;
+  }
+
+  .travel-logo-tagline {
+    font-size: 6px;
+  }
+
+  .travel-navbar .travel-nav-links {
+    gap: 12px !important;
+  }
+
+  .travel-navbar .travel-nav-link {
+    font-size: 12px !important;
+  }
+
+  .travel-navbar .travel-logout-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .travel-logo-tagline {
+    display: none;
+  }
+
+  .travel-navbar {
+    gap: 8px;
+    padding: 10px 12px !important;
+  }
+
+  .travel-navbar .travel-nav-links {
+    gap: 9px !important;
+  }
+
+  .travel-navbar .travel-nav-link {
+    font-size: 11px !important;
+  }
+}
